@@ -33,12 +33,13 @@ Orange: ["North Station", "Haymarket", "Park Street", "State", "Downtown Crossin
              puts counter
              break if i > end_index
          end
-      else 
+        elsif start_index > end_index 
+        i = start_index-1
         loop do 
+            puts "Rider arrives at #{line} Line and #{subway_lines[line.to_sym][i]}."
           i=i-1
-         puts "Rider arrives at #{line} Line and #{subway_lines[line.to_sym][i]}."
          counter= counter+1
-         break if i > end_index
+         break if i < end_index
      end
         end
      return counter 
