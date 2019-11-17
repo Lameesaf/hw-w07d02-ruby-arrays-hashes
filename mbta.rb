@@ -44,5 +44,7 @@ Orange: ["North Station", "Haymarket", "Park Street", "State", "Downtown Crossin
         end
      return counter 
     end
-    
+
+stops_between_stations('Red', 'Alewife', 'Red', 'South Station')     
+stops_between_stations('Red', 'Alewife', 'Red', 'Alewife')         
 stops_between_stations('Red', 'South Station', 'Green', 'Kenmore')     
